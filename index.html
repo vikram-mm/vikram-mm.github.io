@@ -255,8 +255,22 @@
             </td>
           </tr>
            <tr>
-            <tr>
-            <td width="25%"><img src="parrot_compressed.jpg" alt="prl" width="160" height="160"></td>
+            <tr onmouseout="portrait_stop()" onmouseover="portrait_start()">
+            <td width="25%">
+              <div class="one">
+                <div class="two" id='portrait_image'><img  height='95%' width='95%' src='parrot.jpg'></div>
+                <img height='95%' width='95%' src='parrot_compressed.jpg'>
+              </div>
+              <script type="text/javascript">
+                function portrait_start() {
+                  document.getElementById('portrait_image').style.opacity = "1";
+                }
+                function portrait_stop() {
+                  document.getElementById('portrait_image').style.opacity = "0";
+                }
+                portrait_stop()
+              </script>
+            </td>
             <td width="75%" valign="top">
               <p>
                 
