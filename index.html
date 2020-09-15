@@ -100,7 +100,7 @@
               <p align="center">
                 <name>Vikram Mandikal</name>
               </p>
-              <p> I am an MS CS student at the University of Texas at Austin. I am excited to be a part of the <a href= "http://www.ideal.ece.utexas.edu/index.html"> IDEAL Lab! </a> 
+              <p> I am an MS CS student at the University of Texas at Austin where I am a part of the <a href= "http://www.ideal.ece.utexas.edu/index.html"> IDEAL Lab</a>! I was an Applied Scientist Intern at Amazon Alexa AI over the summer of 2020 where I worked on distillation of cross-lingual language models (XLMs).
                  <!--I am looking out for exciting internship opportunities for the summer of 2020, shoot me an  <a href="mailto:vikram@cs.utexas.edu">email</a> to get in touch. -->
               </p>
               <p>Before coming to UT Austin, I completed my undergradtue studies at the <a href="http://www.nitk.ac.in/">National Institute of Technology Karnataka, Surathkal, India</a> where I graduated with a Gold medal. I worked with <a href="http://harsha-simhadri.org/"> Dr. Harsha Simhadri </a> and <a href="http://www.prateekjain.org/"> Dr. Prateek Jain </a> at <b>Microsoft Research, India</b> as a part of my undergraduate thesis. I designed a meta-learning algorithm which enables RNNs to make rolling predictions, this reduces the computational complexity and enables it to be deployed on tiny edge devices (as small as 2KB!). I also contibuted to developing resource efficient speech recognition systems, this work is currently under review at NeurIPS 2019.
@@ -136,6 +136,46 @@
         </table>
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+
+          <tr onmouseout="portrait_stop()" onmouseover="portrait_start()">
+            <td width="25%">
+              <div class="one">
+                <div class="two" id='portrait_image'><img  height='75%' width='100%' src='srnn.png'></div>
+                <img height='75%' width='100%' src='srnn.png'>
+              </div>
+              <script type="text/javascript">
+                function portrait_start() {
+                  document.getElementById('portrait_image').style.opacity = "1";
+                }
+                function portrait_stop() {
+                  document.getElementById('portrait_image').style.opacity = "0";
+                }
+                portrait_stop()
+              </script>
+            </td>
+            <td valign="top" width="75%">
+
+                <papertitle>An Approach for Multi-modal Medical Image Retrieval using Latent Dirichlet Allocation </papertitle>
+             
+              <br>Don 
+              <a href="https://dkdennis.xyz/">Don Dennis</a>,
+              <a href="https://scholar.google.com/citations?user=Yo_NxlcAAAAJ&hl=en">Durmus Alp Emre ACAR</a>,
+              <strong>Vikram Mandikal</strong>,
+              Vinu Sankar Sadasivan,
+              <a href="http://harsha-simhadri.org/">Harsha Vardhan Simhadri</a>,
+              <a href="https://scholar.google.com/citations?user=S4z3uzMAAAAJ&hl=en">Venkatesh Saligrama</a>,
+              <a href="http://www.prateekjain.org/">Prateek Jain</a>,
+              <br>
+              <em> Conference on Neural Information Processing Systems (NeurIPS)</em>, Vancouver, Canada, 2019<i>(Poster Presentation)</i>
+              <br>
+              <a href="https://papers.nips.cc/paper/9451-shallow-rnn-accurate-time-series-classification-on-resource-constrained-devices" target="_blank">[Paper]</a> 
+              <a href="https://papers.nips.cc/paper/9451-shallow-rnn-accurate-time-series-classification-on-resource-constrained-devices-supplemental.zip" target="_blank">[Supplemnetal]</a>
+              <p>Recurrent Neural Networks (RNNs) capture long dependencies and context, and 2 hence are the key component of typical sequential data based tasks. However, the sequential nature of RNNs dictates a large inference cost for long sequences even if the hardware supports parallelization. To induce long-term dependencies, and yet admit parallelization, we introduce novel shallow RNNs. In this architecture, the first layer splits the input sequence and runs several independent RNNs. The second layer consumes the output of the first layer using a second RNN thus capturing long dependencies. We provide theoretical justification for our architecture under weak assumptions that we verify on real-world benchmarks. Furthermore, we show that for time-series classification, our technique leads to substantially improved inference time over standard RNNs without compromising accuracy. For example, we can deploy audio-keyword classification on tiny Cortex M4 devices (100MHz processor, 256KB RAM, no DSP available) which was not possible using standard RNN models. Similarly, using SRNN in the popular Listen-Attend-Spell (LAS) architecture for phoneme classification, we can reduce the lag inphoneme classification by 10-12x while maintaining state-of-the-art accuracy. </p>
+              <p>
+              <!-- <p>This system is the basis for "Portrait Mode" on the Google Pixel 2 smartphones</p> -->
+            </td>
+          </tr>    
+
 
           <tr onmouseout="portrait_stop()" onmouseover="portrait_start()">
             <td width="25%">
